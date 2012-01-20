@@ -1,0 +1,15 @@
+This is a simple utility designed to be used with an ecryptfs
+password storage.
+
+It does the following:
+
+It reads a configuration file from the user configuration directory
+(default: ~/.config/keystore.conf) which contains a "path" variable.
+(For syntax details have a look at libconfig
+ at http://www.hyperrealm.com/libconfig/)
+
+It then opens an "Open File" dialog with that path as default directory.
+If a file is selected it reads the "password" variable from it and
+prints it to stdout.
+
+As a standalone program it's probably of no use to anyone :-).
